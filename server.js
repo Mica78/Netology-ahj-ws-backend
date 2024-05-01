@@ -16,6 +16,10 @@ app.use(
   })
 );
 
+app.use((ctx) => {
+  ctx.response.body = "checked";
+})
+
 const port = process.env.PORT || 7000;
 const server = http.createServer(app.callback());
 
