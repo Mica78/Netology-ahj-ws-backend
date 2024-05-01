@@ -104,5 +104,5 @@ const sendMessageToAllUsers = function(message) {
   readyStateClients.forEach(client => client.send(eventData));
 }
 
-// console.log("Server start on port" + port)
+console.log("Server start on port" + port)
 server.listen(port);
